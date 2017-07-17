@@ -74,7 +74,7 @@ post '/callback' do
           text: 'Bye Bye!'
         }
 
-      client.reply_message(event['replyToken'], message)
+        client.reply_message(event['replyToken'], message)
       else # オウム返し
         message = {
           type: 'text',
