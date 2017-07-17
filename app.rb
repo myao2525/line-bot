@@ -22,7 +22,7 @@ get '/test/push' do
     }
     response = client.push_message(userId, message)
     p "#{response.code} #{response.body} test"
-    p "message to LINE"
+    p "message to LINE!!"
 end
 
 get '/test/profile' do
