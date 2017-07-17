@@ -58,10 +58,17 @@ post '/callback' do
     when Line::Bot::Event::Message
       case event.type
       when Line::Bot::Event::MessageType::Text
+        if input_text.include?("おはよう") || input_text.include?('Stephen')
+        message = {
+          type: 'text',
+          text: 'Hello!!'
+          }
+       else
         message = {
           type: 'text',
           text: event.message['text']
         }
+       end
         client.reply_message(event['replyToken'], message)
       when Line::Bot::Event::MessageType::Image, Line::Bot::Event::MessageType::Video
         response = client.get_message_content(event.message['id'])
