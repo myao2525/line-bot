@@ -1,6 +1,10 @@
 # LINE Messaging APIを使ったチャットボットのサンプル
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+=>
+1. ここでデプロイをし、必要なIDなどを入力
+2. HerokuでGithub連携をし、AutoDeployに設定
+3. https://[herokuでのapp名].herokuapp.com/test/push でmessagepush
 
 # 依存
 * https://github.com/line/line-bot-sdk-ruby
