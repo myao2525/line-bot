@@ -73,8 +73,6 @@ post '/callback' do
           type: 'text',
           text: 'Bye Bye!'
         }
-
-        client.reply_message(event['replyToken'], message)
       else # オウム返し
         message = {
           type: 'text',
