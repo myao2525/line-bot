@@ -58,7 +58,7 @@ post '/callback' do
     when Line::Bot::Event::Message
       case event.type
       when Line::Bot::Event::MessageType::Text
-        if input_text=="おはよう"
+        if event.message['text']=='おはよう'
         message = {
           type: 'text',
           text: 'Hello!!'
