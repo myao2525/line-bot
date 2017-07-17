@@ -21,7 +21,7 @@ get '/test/push' do
         text: 'push message'
     }
     response = client.push_message(userId, message)
-    p "#{response.code} #{response.body}"
+    p "#{response.code} #{response.body} test"
 end
 
 get '/test/profile' do
